@@ -14,7 +14,7 @@ class CreateUsersAddDeletedAtTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint  $table) {
-            $table->dateTime('deleted_at');
+            $table->dateTime('deleted_at')->nullable();
         });
     }
 
